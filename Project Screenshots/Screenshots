@@ -1,1 +1,127 @@
+Screenshots/
+│
+├── 01-lab-setup.png
+├── 02-icmp-ping-analysis.png
+├── 03-dns-query-analysis.png
+├── 04-http-get-request.png
+├── 05-tls-https-analysis.png
+├── 06-tcp-three-way-handshake.png
+├── 07-arp-analysis.png
+├── 08-udp-dns-analysis.png
+```
+---
+
+# 1. Lab Setup
+
+**Filename**
+
+```
+01-lab-setup.png
+```
+
+**Caption**
+
+> Virtual lab environment consisting of Kali Linux and Windows 10 virtual machines running on VMware Workstation. Wireshark was used to capture and analyze network traffic generated between the systems.
+
+---
+
+# 2. ICMP Analysis
+
+**Filename**
+
+```
+02-icmp-ping-analysis.png
+```
+
+**Caption**
+
+> ICMP traffic generated using the `ping` command from Kali Linux to the Windows 10 virtual machine. Wireshark captured Echo Request and Echo Reply packets, confirming successful network connectivity.
+
+---
+
+# 3. DNS Analysis
+
+**Filename**
+
+```
+03-dns-query-analysis.png
+```
+
+**Caption**
+
+> DNS query generated using `nslookup google.com`. Wireshark captured the DNS request and response exchanged with the configured DNS server, demonstrating successful domain name resolution.
+
+---
+
+# 4. HTTP Analysis
+
+**Filename**
+
+```
+04-http-get-request.png
+```
+
+**Caption**
+
+> HTTP traffic captured while accessing a web page. The capture shows an HTTP GET request from the client and an HTTP/1.1 response from the server, illustrating the request-response communication model.
+
+---
+
+# 5. HTTPS / TLS Analysis
+
+**Filename**
+
+```
+05-tls-https-analysis.png
+```
+
+**Caption**
+
+> TLS-encrypted HTTPS communication captured while accessing Google. Wireshark displays the TLS handshake and encrypted application data exchanged between the client and remote servers.
+
+---
+
+# 6. TCP Analysis
+
+**Filename**
+
+```
+06-tcp-three-way-handshake.png
+```
+
+**Caption**
+
+> TCP packets showing the complete three-way handshake (SYN → SYN-ACK → ACK), followed by HTTP communication and graceful connection termination using FIN and ACK packets.
+
+---
+
+# 7. ARP Analysis
+
+**Filename**
+
+```
+07-arp-analysis.png
+```
+
+**Caption**
+
+> ARP packets showing broadcast requests, ARP replies, ARP probes, and ARP announcements used to resolve IPv4 addresses to MAC addresses within the local network.
+
+---
+
+# 8. UDP Analysis
+
+**Filename**
+
+```
+08-udp-dns-analysis.png
+```
+
+**Caption**
+
+> UDP traffic carrying DNS queries and responses. The capture highlights connectionless communication using destination port 53, along with multicast DNS (mDNS) packets.
+
+---
+
+ark → Statistics → Protocol Hierarchy**. It provides a summary of all captured protocols and gives recruiters a quick overview of your traffic analysis. This is a nice finishing touch that many beginner repositories don't include.
 
